@@ -1,0 +1,1 @@
+It does not have specific license, however check what is in file headers.

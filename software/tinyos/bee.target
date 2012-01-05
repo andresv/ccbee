@@ -1,0 +1,14 @@
+#-*-Makefile-*- vim:syntax=make
+#$Id$
+
+PLATFORM ?= bee
+MSP_MCU = cc430x5137
+IAR_MCU_GROUP = cc430x513x
+IAR_LINKER_XCL = lnkcc430F5137.xcl
+MSP_BSL ?= cc430-bsl
+MSP_BSL_FLAGS += --noadg715 -S 115200
+
+$(call TOSMake_include_platform,msp)
+
+bee: $(BUILD_DEPS)
+        @:
