@@ -13,7 +13,7 @@ Typically TinyOS is installed to /opt
     git clone git://github.com/tp-freeforall/prod.git
     sudo chown -R youruser:youruser /opt/prod
 
-Setup environmental variables. Create file called **/opt/tinyos-env.sh**
+Setup environment variables. Create file called **/opt/tinyos-env.sh**
 
 ```shell
 # Here we setup the environment
