@@ -66,3 +66,7 @@ Now it is possible to compile TinyOS apps for ccbee. Try it!
 ### Firmfare
 
 Currently firmware is not yet ready!
+
+## LICENSE
+
+[hardware](https://github.com/andresv/ccbee/blob/master/hardware/LICENSE.txt) and [software](https://github.com/andresv/ccbee/blob/master/software/LICENSE.txt) 
