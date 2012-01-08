@@ -3,6 +3,10 @@
 CCBee is TI CC430F5137 based radio module that fits into XBee PRO socket.
 It has UART and SPI interface for sending and receiving data.
 
+## Hardware
+
+Schematic and PCB is designed using [EAGLE](http://www.cadsoftusa.com/).
+
 ## Software
 
 ### Install TinyOS
