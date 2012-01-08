@@ -7,17 +7,18 @@ It has UART and SPI interface for sending and receiving data.
 
 ### Install TinyOS
 
-Typically TinyOS is installed to /opt
+For toolchain installation follow instructions from: http://tinyprod.net/repos/debian-dev/
+    
+Install TinyOS source:
 
-    cd /opt
-    git clone git://github.com/tp-freeforall/prod.git
-    sudo chown -R youruser:youruser /opt/prod
+    cd ~/
+    git clone git://github.com/tp-freeforall/prod.git tinyos-prod
 
-Setup environment variables. Create file called **/opt/tinyos-env.sh**
+Setup environment variables. Create file called **~/tinyos-prod/tinyos-env.sh**
 
 ```shell
 # Here we setup the environment
-# variables needed by the tinyos 
+# variables needed by the TinyOS 
 # make system
 
 if [ $# -eq 0 ]
@@ -46,26 +47,28 @@ fi
 
 Now add this to your **~/.bashrc** file:
 
-    source /opt/tinyos-env.sh /opt/prod
+    source ~/tinyos-prod/tinyos-env.sh ~/tinyos-prod/
+
+[Here](https://github.com/tp-freeforall/prod/blob/msp430-int/00b_Development_Environment) you can find more detailed instructions.
 
 Get platform files. Put this repository somewhere you like, for example to home:
     
-    cd /home/yourname
+    cd ~/
     git clone git://github.com/andresv/ccbee.git
 
 Create symlinks to platform files:
 
-    ln -s /home/yourname/ccbee/software/tinyos/bee.target /opt/prod/support/make/bee.target
-    ln -s /home/yourname/ccbee/software/tinyos/bee /opt/prod/platforms/bee
+    ln -s ~/ccbee/software/tinyos/bee.target ~/tinyos-prod/support/make/bee.target
+    ln -s ~/ccbee/software/tinyos/bee ~/tinyos-prod/platforms/bee
 
 Now it is possible to compile TinyOS apps for ccbee. Try it!
 
-    cd /opt/prod/apps/Blink
+    cd ~/tinyos-prod/apps/Blink
     make bee
 
 ### Firmfare
 
-Currently firmware is not yet ready!
+Firmware is not yet ready!
 
 ## LICENSE
 
