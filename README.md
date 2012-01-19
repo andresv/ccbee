@@ -7,6 +7,32 @@ It has UART and SPI interface for sending and receiving data.
 
 Schematic and PCB is designed using [EAGLE](http://www.cadsoftusa.com/).
 
+## BOM
+
+<table>
+    <tr>
+        <td><b>Part</b></td> <td><b>Value</b></td> <td><b>Package</b></td> <td><b>Quantity</b></td> <td><b>Farnell code</b></td>
+    </tr>
+    <tr>
+        <td>IC1</td> <td>Johanson Technology 0896BM15A0001E</td> <td></td> <td>1</td> <td>1885513</td>
+    </tr>
+    <tr>
+        <td>X2</td> <td></td> <td>U.FL-R-SMT</td> <td>1</td> <td>1688077</td>
+    </tr>
+    <tr>
+        <td>X3</td> <td>Johanson Technology 0868AT43A0020E</td> <td></td> <td>1</td> <td>1885493</td>
+    </tr>
+    <tr>
+        <td>U1</td> <td>Texas Instruments CC430F5137</td> <td>48VQFN</td> <td>1</td> <td>1903415</td>
+    </tr>
+    <tr>
+        <td>Q1</td> <td>32 kHz</td> <td>3.2 mm x 1.5 mm</td> <td>1</td> <td>1712821</td>
+    </tr>
+    <tr>
+        <td>Q2</td> <td>26 MHz</td> <td>5.0 mm x 3.2 mm</td> <td>1</td> <td>1841997</td>
+    </tr>
+</table>
+
 ## Software
 
 ### Install TinyOS
