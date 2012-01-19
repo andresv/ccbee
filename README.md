@@ -31,6 +31,30 @@ Schematic and PCB is designed using [EAGLE](http://www.cadsoftusa.com/).
     <tr>
         <td>Q2</td> <td>26 MHz</td> <td>5.0 mm x 3.2 mm</td> <td>1</td> <td>1841997</td>
     </tr>
+    <tr>
+        <td>C1, C2</td> <td>12.5 pF</td> <td>0402</td> <td>2</td> <td>1828875</td>
+    </tr>
+    <tr>
+        <td>C3, C6, C8, C10, C11, C12, C13, C15, C17, C19</td> <td>0.1 uF</td> <td>0402</td> <td>10</td> <td>1828860</td>
+    </tr>
+    <tr>
+        <td>C4</td> <td>0.47 uF</td> <td>0603</td> <td>1</td> <td>1833805</td>
+    </tr>
+    <tr>
+        <td>C5, C7, C9, C18</td> <td>10 uF</td> <td>0603</td> <td>4</td> <td>1886093</td>
+    </tr>
+    <tr>
+        <td>C14, C16</td> <td>2 pF</td> <td>0402</td> <td>2</td> <td>1758932</td>
+    </tr>
+    <tr>
+        <td>C20, C21</td> <td>18 pF</td> <td>0402</td> <td>2</td> <td>1828876</td>
+    </tr>
+    <tr>
+        <td>C22, C23</td> <td>1.8 pF</td> <td>0402</td> <td>2</td> <td>1828870</td>
+    </tr>
+    <tr>
+        <td>C25</td> <td>2.2 nF</td> <td>0402</td> <td>1</td> <td>1414582</td>
+    </tr>
 </table>
 
 ## Software
