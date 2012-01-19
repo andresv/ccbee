@@ -55,6 +55,36 @@ Schematic and PCB is designed using [EAGLE](http://www.cadsoftusa.com/).
     <tr>
         <td>C25</td> <td>2.2 nF</td> <td>0402</td> <td>1</td> <td>1414582</td>
     </tr>
+    <tr>
+        <td>L1</td> <td>ferrite 1 kOhm</td> <td>0402</td> <td>1</td> <td>1515788</td>
+    </tr>
+    <tr>
+        <td>L2</td> <td>5.6 nH</td> <td>0402</td> <td>1</td> <td>1669640</td>
+    </tr>
+    <tr>
+        <td>L3</td> <td>12 nH</td> <td>0402</td> <td>1</td> <td>1515341</td>
+    </tr>
+    <tr>
+        <td>L4</td> <td>1.8 nH</td> <td>0402</td> <td>1</td> <td>1669627</td>
+    </tr>
+    <tr>
+        <td>R1</td> <td>56 kOhm</td> <td>0402</td> <td>1</td> <td>1738874</td>
+    </tr>
+    <tr>
+        <td>R2</td> <td>0 Ohm</td> <td>0402</td> <td>1</td> <td>2008330</td>
+    </tr>
+    <tr>
+        <td>R3</td> <td>47 kOhm</td> <td>0402</td> <td>1</td> <td>1840558</td>
+    </tr>
+    <tr>
+        <td>R4</td> <td>330 Ohm</td> <td>0402</td> <td>1</td> <td>1840544</td>
+    </tr>
+    <tr>
+        <td>R5, R6, R7</td> <td>1 kOhm</td> <td>0402</td> <td>3</td> <td>1738850</td>
+    </tr>
+    <tr>
+        <td>LED0, LED1, LED2</td> <td>red</td> <td>0603</td> <td>3</td> <td>1226389</td>
+    </tr>
 </table>
 
 ## Software
