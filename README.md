@@ -89,7 +89,7 @@ Schematic and PCB is designed using [EAGLE](http://www.cadsoftusa.com/).
 
 ## Software
 
-### Install TinyOS
+### Install TinyOS (Ubuntu)
 
 For toolchain installation follow instructions from: http://tinyprod.net/repos/debian-dev/
     
@@ -150,7 +150,7 @@ Now it is possible to compile TinyOS apps for ccbee. Try it!
     cd ~/tinyos-prod/apps/Blink
     make bee
 
-### Firmfare
+### Firmware
 
 Firmware is not yet ready!
 
