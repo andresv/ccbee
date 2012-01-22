@@ -85,6 +85,9 @@ Schematic and PCB is designed using [EAGLE](http://www.cadsoftusa.com/).
     <tr>
         <td>LED0, LED1, LED2</td> <td>red</td> <td>0603</td> <td>3</td> <td>1226389</td>
     </tr>
+    <tr>
+        <td>Socket</td> <td></td> <td>2 mm x 10 pins</td> <td>2</td> <td>2040664</td>
+    </tr>
 </table>
 
 ## Software
