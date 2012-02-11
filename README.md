@@ -146,13 +146,13 @@ Get platform files. Put this repository somewhere you like, for example to home:
 
 Create symlinks to platform files:
 
-    ln -s ~/ccbee/software/tinyos/bee.target ~/tinyos-prod/support/make/bee.target
-    ln -s ~/ccbee/software/tinyos/bee ~/tinyos-prod/platforms/bee
+    ln -s ~/ccbee/software/tinyos/ccbee.target ~/tinyos-prod/support/make
+    ln -s ~/ccbee/software/tinyos/ccbee ~/tinyos-prod/tos/platforms
 
 Now it is possible to compile TinyOS apps for ccbee. Try it!
 
     cd ~/tinyos-prod/apps/Blink
-    make bee
+    make ccbee
 
 ### Firmware
 
