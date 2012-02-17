@@ -6,7 +6,8 @@ It has UART and SPI interface for sending and receiving data.
 ## Hardware
 
 Schematic and PCB are designed using [EAGLE](http://www.cadsoftusa.com/). This is 2 layer design. 50 Ohm lines are calculated for board thickness 1 mm and copper 35 um.
-Calculations are done with [AppCAD](http://www.hp.woodshot.com/appcad/version302/setup.exe). If your board thickness will be different, calculate new values using AppCAD "Coplanar Waveguide".
+Calculations are done with [AppCAD](http://www.hp.woodshot.com/appcad/version302/setup.exe). Another good tool for calculating lines is [TX-Line](http://web.awrcorp.com/Usa/Products/Optional-Products/TX-Line/).
+If your board thickness will be different, calculate new values using AppCAD "Coplanar Waveguide".
 
 ## BOM
 
