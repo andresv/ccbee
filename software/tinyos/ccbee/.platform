@@ -5,11 +5,12 @@
 
 for (split(/\n/, <<'EOText'
 
-  %P
+  %P/chips/msp430/rf1a/physical
   %P/hardware/leds
 
+  %T/platforms/mm5s/hardware/leds
+
   %T/platforms/red
-  %T/platforms/red/hardware/leds
   %T/platforms/red/hardware/pins
   %T/platforms/red/hardware/usci
   %T/platforms/red/hardware/radio
