@@ -6,7 +6,8 @@ It has UART and SPI interface for sending and receiving data.
 ## Hardware
 
 Schematic and PCB are designed using [EAGLE](http://www.cadsoftusa.com/). This is 2 layer design. 50 Ohm lines are calculated for board thickness 1 mm and copper 35 um.
-Calculations are done with [AppCAD](http://www.hp.woodshot.com/appcad/version302/setup.exe). If your board thickness will be different, calculate new values using AppCAD "Coplanar Waveguide".
+Calculations are done with [AppCAD](http://www.hp.woodshot.com/appcad/version302/setup.exe). Another good tool for calculating lines is [TX-Line](http://web.awrcorp.com/Usa/Products/Optional-Products/TX-Line/).
+If your board thickness will be different, calculate new values using AppCAD "Coplanar Waveguide".
 
 ## BOM
 
@@ -15,13 +16,13 @@ Calculations are done with [AppCAD](http://www.hp.woodshot.com/appcad/version302
         <td><b>Part</b></td> <td><b>Value</b></td> <td><b>Package</b></td> <td><b>Quantity</b></td> <td><b>Farnell code</b></td>
     </tr>
     <tr>
-        <td>IC1</td> <td>Johanson Technology 0896BM15A0001E</td> <td></td> <td>1</td> <td>1885513</td>
+        <td>IC1</td> <td>Balun: Johanson Technology 0896BM15A0001E</td> <td></td> <td>1</td> <td>1885513</td>
     </tr>
     <tr>
-        <td>X2</td> <td></td> <td>U.FL-R-SMT</td> <td>1</td> <td>1688077</td>
+        <td>X2</td> <td>Antenna connector</td> <td>U.FL-R-SMT</td> <td>1</td> <td>1688077</td>
     </tr>
     <tr>
-        <td>X3</td> <td>Johanson Technology 0868AT43A0020E</td> <td></td> <td>1</td> <td>1885493</td>
+        <td>X3</td> <td>Chip antenna: Johanson Technology 0868AT43A0020E</td> <td></td> <td>1</td> <td>1885493</td>
     </tr>
     <tr>
         <td>U1</td> <td>Texas Instruments CC430F5137</td> <td>48VQFN</td> <td>1</td> <td>1903415</td>
@@ -146,13 +147,13 @@ Get platform files. Put this repository somewhere you like, for example to home:
 
 Create symlinks to platform files:
 
-    ln -s ~/ccbee/software/tinyos/bee.target ~/tinyos-prod/support/make/bee.target
-    ln -s ~/ccbee/software/tinyos/bee ~/tinyos-prod/platforms/bee
+    ln -s ~/ccbee/software/tinyos/ccbee.target ~/tinyos-prod/support/make
+    ln -s ~/ccbee/software/tinyos/ccbee ~/tinyos-prod/tos/platforms
 
 Now it is possible to compile TinyOS apps for ccbee. Try it!
 
     cd ~/tinyos-prod/apps/Blink
-    make bee
+    make ccbee
 
 ### Firmware
 
