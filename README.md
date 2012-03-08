@@ -8,6 +8,7 @@ It has UART and SPI interface for sending and receiving data.
 Schematic and PCB are designed using [EAGLE](http://www.cadsoftusa.com/). This is 2 layer design. 50 Ohm lines are calculated for board thickness 1 mm and copper 35 um.
 Calculations are done with [AppCAD](http://www.hp.woodshot.com/appcad/version302/setup.exe). Another good tool for calculating lines is [TX-Line](http://web.awrcorp.com/Usa/Products/Optional-Products/TX-Line/).
 If your board thickness will be different, calculate new values using AppCAD "Coplanar Waveguide".
+This board is designed for 868 MHz ISM frequency band.
 
 ## BOM
 
@@ -158,7 +159,15 @@ Now it is possible to compile TinyOS apps for ccbee. Try it!
 Use MSP-FET430UIF or alternative to download image to the microcontroller. This example shows how to use [mspdebug](http://mspdebug.sourceforge.net/) for doing that.
 
     mspdebug uif -d /dev/ttyUSB0 "prog build/ccbee/main.ihex"
-    
+
+### Measurements
+
+It seems that RF part is currently quite bad. Probably it is due to 2 layer design and I guess this coplanar waveguide does not work as expected.
+With PATABLE0 set to 0xC0 (max) I measured 3 dBm, with 0xC3 2 dBm and with 0xC6 about 1 dBm. Actually with 0xC0 it should be near 10 dBm.
+PATABLE0 can be set in Makefile:
+
+    CFLAGS += -DSMARTRF_SETTING_PATABLE0=0xC0
+
 ### Firmware
 
 Serial <-> radio bridge firmware is not yet ready.
