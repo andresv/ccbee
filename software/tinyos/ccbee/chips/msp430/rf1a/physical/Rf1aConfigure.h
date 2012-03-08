@@ -147,22 +147,9 @@ typedef struct rf1a_config_t {
 
 
 
-#if RF1A_868_MHZ_175K
-#warning RF1A using 868 MHz 175 kbps
-#include <smartrf/SRFS7_868_GFSK_175K_SENS.h>
 
-#elif RF1A_868_MHZ_38_4K
-#warning RF1A using 868 MHz 38.4 kbps
-#include <smartrf/SRFS7_868_GFSK_38p4K_SENS.h>
-
-#elif RF1A_868_MHZ_1_2K
-#warning RF1A using 868 MHz 1.2 kbps
-#include <smartrf/SRFS7_868_GFSK_1p2K_SENS.h>
-
-#else
 #warning RF1A using 868 MHz 250 kbps
-#include <smartrf/SRFS7_868_GFSK_250K_SENS.h>
-#endif
+#include "SRFS7_868_GFSK_250K.h"
 
 
 #ifndef RF1A_CHANNEL_MIN
@@ -275,7 +262,7 @@ rf1a_config_t rf1a_default_config = {
 #if defined(SMARTRF_SETTING_PATABLE0)
   patable: { SMARTRF_SETTING_PATABLE0 },
 #else
-  patable: { 0xc6 }
+  patable: { 0xc3 }
 #endif
 };
 
