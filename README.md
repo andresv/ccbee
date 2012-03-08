@@ -155,9 +155,13 @@ Now it is possible to compile TinyOS apps for ccbee. Try it!
     cd ~/tinyos-prod/apps/Blink
     make ccbee
 
+Use MSP-FET430UIF or alternative to download image to the microcontroller. This example shows how to use [mspdebug](http://mspdebug.sourceforge.net/) for doing that.
+
+    mspdebug uif -d /dev/ttyUSB0 "prog build/ccbee/main.ihex"
+    
 ### Firmware
 
-Firmware is not yet ready!
+Serial <-> radio bridge firmware is not yet ready.
 
 ## LICENSE
 
