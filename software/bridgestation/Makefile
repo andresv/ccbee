@@ -1,0 +1,4 @@
+COMPONENT=BridgeStationAppC
+
+include $(MAKERULES)
+
