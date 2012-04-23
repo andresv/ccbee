@@ -82,7 +82,10 @@ implementation {
     // Peripheral start/stop events
     //----------------------------------------------------------------------
     event void RadioControl.startDone(error_t error) {
-        if (error != SUCCESS) {
+        if (error == SUCCESS) {
+            call UartStream.enableReceiveInterrupt();
+        }
+        else {
             call RadioControl.start();
         }
     }
@@ -177,11 +180,13 @@ implementation {
         }
         else {
             // payload is full, try to send data to radio
+            bytesReceived = 0;
             SendToRadio();
         }
     }
 
     event void UartRxTimer.fired() {
+        bytesReceived = 0;
         SendToRadio();
     }
 
