@@ -97,10 +97,7 @@ This board is designed for 868 MHz ISM frequency band.
 
 ### Install TinyOS (Ubuntu)
 
-For toolchain installation follow instructions from: http://tinyprod.net/debian-dev/.
-Note that also tinyos-tools must be installed:
-
-    sudo apt-get install tinyos-tools
+For toolchain installation follow instructions from: http://tinyprod.net/debian-dev/
     
 Install TinyOS source:
 
