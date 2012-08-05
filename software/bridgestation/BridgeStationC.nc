@@ -61,7 +61,7 @@ implementation {
     message_t* UartRxMessage = NULL;
     message_t* UartTxMessage = NULL;
 
-    uint8_t bytesReceived = 0;
+    uint8_t bytes_received = 0;
     uint8_t rx_byte;
 
     bool radio_busy = FALSE;
@@ -95,6 +95,8 @@ implementation {
     // Radio handling
     //----------------------------------------------------------------------
     event message_t* RadioReceive.receive(message_t* msg, void* payload, uint8_t len) {
+        call Leds.led1Toggle();
+        
         if (!call UartOutPool.empty() && call UartOutQueue.size() < call UartOutQueue.maxSize()) {
             message_t* tmp = call UartOutPool.get();
 
@@ -122,6 +124,7 @@ implementation {
 
             if (call RadioSend.send(0xFFFF, msg, len) == SUCCESS) {
                 radio_busy = TRUE;
+                call Leds.led2Toggle();
             }
             else {
                 call RadioOutPool.put(msg);
@@ -170,23 +173,23 @@ implementation {
         uint8_t* payload_p = (uint8_t*)call RadioPacket.getPayload(UartRxMessage, TOSH_DATA_LENGTH);
 
         // fill in message_t payload with bytes received from Uart
-        payload_p[bytesReceived] = rx_byte;
-        bytesReceived++;
-        call RadioPacket.setPayloadLength(UartRxMessage, bytesReceived);
+        payload_p[bytes_received] = rx_byte;
+        bytes_received++;
+        call RadioPacket.setPayloadLength(UartRxMessage, bytes_received);
 
-        if (bytesReceived < TOSH_DATA_LENGTH) {
+        if (bytes_received < TOSH_DATA_LENGTH) {
             // wait a little, there might be more data coming from Uart
             call UartRxTimer.startOneShot(WAIT_UART_PACKET_END_TIME);
         }
         else {
             // payload is full, try to send data to radio
-            bytesReceived = 0;
+            bytes_received = 0;
             SendToRadio();
         }
     }
 
     event void UartRxTimer.fired() {
-        bytesReceived = 0;
+        bytes_received = 0;
         SendToRadio();
     }
 
