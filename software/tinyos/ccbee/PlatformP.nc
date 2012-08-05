@@ -41,7 +41,7 @@ module PlatformP {
   provides interface Init;
   uses {
     interface Init as PlatformPins;
-    interface Init as PlatformLeds;	//Surf Led System
+    interface Init as PlatformLeds;
     interface Init as PlatformClock;
     interface Init as PeripheralInit;
     interface Pmm;
@@ -55,11 +55,11 @@ implementation {
   }
 
   command error_t Init.init() {
-    WDTCTL = WDTPW + WDTHOLD;             // Stop watchdog timer
+    WDTCTL = WDTPW + WDTHOLD; // Stop watchdog timer
 
     call PlatformPins.init();
     call Pmm.setVoltage(RADIO_VCORE_LEVEL);
-    call PlatformLeds.init();		// Surf Led System
+    call PlatformLeds.init();
     call PlatformClock.init();
     call PeripheralInit.init();
 

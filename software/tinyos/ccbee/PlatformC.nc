@@ -45,7 +45,7 @@
 
 configuration PlatformC {
   provides interface Init as PlatformInit;
-  uses 	   interface Init as PeripheralInit;
+  uses interface Init as PeripheralInit;
 }
 implementation {
 
@@ -56,7 +56,7 @@ implementation {
   components PlatformPinsC;
   PlatformP.PlatformPins -> PlatformPinsC;
 
-  components PlatformLedsC;					//Surf Led System
+  components PlatformLedsC;
   PlatformP.PlatformLeds -> PlatformLedsC;
 
   components PlatformUsciMapC;
