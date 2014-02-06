@@ -110,7 +110,7 @@ Setup environment variables. Create file called **~/tinyos-prod/tinyos-env.sh**
 
 ```shell
 # Here we setup the environment
-# variables needed by the TinyOS 
+# variables needed by the TinyOS
 # make system
 
 if [ $# -eq 0 ]
@@ -139,12 +139,12 @@ fi
 
 Now add this to your **~/.bashrc** file:
 
-    source ~/tinyos-prod/tinyos-env.sh ~/tinyos-prod/
+    source ~/tinyos-prod/tinyos-env.sh ~/tinyos-prod
 
 [Here](https://github.com/tp-freeforall/prod/blob/msp430-int/00b_Development_Environment) you can find more detailed instructions.
 
 Get platform files. Put this repository somewhere you like, for example to home:
-    
+
     cd ~/
     git clone git://github.com/andresv/ccbee.git
 
@@ -176,4 +176,4 @@ Serial <-> radio bridge firmware is not yet ready.
 
 ## LICENSE
 
-[hardware](https://github.com/andresv/ccbee/blob/master/hardware/LICENSE.txt) and [software](https://github.com/andresv/ccbee/blob/master/software/LICENSE.txt) 
+[hardware](https://github.com/andresv/ccbee/blob/master/hardware/LICENSE.txt) and [software](https://github.com/andresv/ccbee/blob/master/software/LICENSE.txt)
