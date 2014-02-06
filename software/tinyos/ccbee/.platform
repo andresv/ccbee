@@ -9,7 +9,7 @@ for (split(/\n/, <<'EOText'
   %P/chips/msp430/rf1a/smartrf
   %P/hardware/leds
 
-  %T/platforms/mm5s/hardware/leds
+  %T/platforms/exp5438_2520/hardware/leds
 
   %T/platforms/red
   %T/platforms/red/hardware/pins
@@ -22,8 +22,9 @@ for (split(/\n/, <<'EOText'
   %T/chips/msp430/x5xxx
   %T/chips/msp430/x5xxx/lpm
   %T/chips/msp430/x5xxx/timer
-  %T/chips/msp430/x5xxx/usci-bf
-  %T/chips/msp430/x5xxx/usci-bf/i2c-sm
+  %T/chips/msp430/x2x5/timer
+  %T/chips/msp430/x5xxx/usci-v2
+  %T/chips/msp430/x5xxx/usci-v2/i2c-sm
 
   %T/chips/msp430
   %T/chips/msp430/pins
